@@ -22,389 +22,397 @@ Partial Class MaklumatPelanggan
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton2 = New System.Windows.Forms.RadioButton()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.lblMaklumatPelanggan = New System.Windows.Forms.Label()
+        Me.lblNama = New System.Windows.Forms.Label()
+        Me.lblTele = New System.Windows.Forms.Label()
+        Me.lblAlamat = New System.Windows.Forms.Label()
+        Me.lblJantina = New System.Windows.Forms.Label()
+        Me.lblNegeri = New System.Windows.Forms.Label()
+        Me.txtBoxName = New System.Windows.Forms.TextBox()
+        Me.txtBoxaddress = New System.Windows.Forms.TextBox()
+        Me.rbnLelaki = New System.Windows.Forms.RadioButton()
+        Me.rbnPerempuan = New System.Windows.Forms.RadioButton()
+        Me.cbNegeri = New System.Windows.Forms.ComboBox()
+        Me.txtBoxTele = New System.Windows.Forms.TextBox()
         Me.lblBayaran = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox4 = New System.Windows.Forms.CheckBox()
-        Me.CheckBox5 = New System.Windows.Forms.CheckBox()
-        Me.RadioButton3 = New System.Windows.Forms.RadioButton()
-        Me.RadioButton4 = New System.Windows.Forms.RadioButton()
+        Me.lblPerisa = New System.Windows.Forms.Label()
+        Me.ckbMilo = New System.Windows.Forms.CheckBox()
+        Me.ckbPisang = New System.Windows.Forms.CheckBox()
+        Me.ckbStrawberi = New System.Windows.Forms.CheckBox()
+        Me.ckbCoklat = New System.Windows.Forms.CheckBox()
+        Me.ckbKopi = New System.Windows.Forms.CheckBox()
+        Me.rbnCash = New System.Windows.Forms.RadioButton()
+        Me.rbnCashless = New System.Windows.Forms.RadioButton()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.lblTarikh = New System.Windows.Forms.Label()
+        Me.dtpTarikh = New System.Windows.Forms.DateTimePicker()
+        Me.dgv1 = New System.Windows.Forms.DataGridView()
         Me.Bil = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Nama = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.No_tel = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnCreate = New System.Windows.Forms.Button()
+        Me.btnDelete = New System.Windows.Forms.Button()
+        Me.btnUpdate = New System.Windows.Forms.Button()
+        Me.btnRead = New System.Windows.Forms.Button()
+        CType(Me.dgv1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'Label1
+        'lblMaklumatPelanggan
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Agency FB", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(243, 9)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(299, 44)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "MAKLUMAT PELANGGAN"
+        Me.lblMaklumatPelanggan.AutoSize = True
+        Me.lblMaklumatPelanggan.Font = New System.Drawing.Font("Agency FB", 27.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblMaklumatPelanggan.Location = New System.Drawing.Point(243, 9)
+        Me.lblMaklumatPelanggan.Name = "lblMaklumatPelanggan"
+        Me.lblMaklumatPelanggan.Size = New System.Drawing.Size(299, 44)
+        Me.lblMaklumatPelanggan.TabIndex = 1
+        Me.lblMaklumatPelanggan.Text = "MAKLUMAT PELANGGAN"
         '
-        'Label2
+        'lblNama
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(28, 97)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(35, 13)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Nama"
+        Me.lblNama.AutoSize = True
+        Me.lblNama.Location = New System.Drawing.Point(28, 97)
+        Me.lblNama.Name = "lblNama"
+        Me.lblNama.Size = New System.Drawing.Size(35, 13)
+        Me.lblNama.TabIndex = 2
+        Me.lblNama.Text = "Nama"
         '
-        'Label3
+        'lblTele
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(24, 130)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 13)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "No.Telefon"
+        Me.lblTele.AutoSize = True
+        Me.lblTele.Location = New System.Drawing.Point(24, 130)
+        Me.lblTele.Name = "lblTele"
+        Me.lblTele.Size = New System.Drawing.Size(60, 13)
+        Me.lblTele.TabIndex = 3
+        Me.lblTele.Text = "No.Telefon"
         '
-        'Label4
+        'lblAlamat
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(24, 162)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 13)
-        Me.Label4.TabIndex = 4
-        Me.Label4.Text = "Alamat"
+        Me.lblAlamat.AutoSize = True
+        Me.lblAlamat.Location = New System.Drawing.Point(24, 162)
+        Me.lblAlamat.Name = "lblAlamat"
+        Me.lblAlamat.Size = New System.Drawing.Size(39, 13)
+        Me.lblAlamat.TabIndex = 4
+        Me.lblAlamat.Text = "Alamat"
         '
-        'Label5
+        'lblJantina
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(24, 290)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(41, 13)
-        Me.Label5.TabIndex = 6
-        Me.Label5.Text = "Jantina"
+        Me.lblJantina.AutoSize = True
+        Me.lblJantina.Location = New System.Drawing.Point(24, 290)
+        Me.lblJantina.Name = "lblJantina"
+        Me.lblJantina.Size = New System.Drawing.Size(41, 13)
+        Me.lblJantina.TabIndex = 6
+        Me.lblJantina.Text = "Jantina"
         '
-        'Label6
+        'lblNegeri
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(24, 253)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(38, 13)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Negeri"
+        Me.lblNegeri.AutoSize = True
+        Me.lblNegeri.Location = New System.Drawing.Point(24, 253)
+        Me.lblNegeri.Name = "lblNegeri"
+        Me.lblNegeri.Size = New System.Drawing.Size(38, 13)
+        Me.lblNegeri.TabIndex = 5
+        Me.lblNegeri.Text = "Negeri"
         '
-        'TextBox1
+        'txtBoxName
         '
-        Me.TextBox1.AccessibleName = "txtBox1"
-        Me.TextBox1.Location = New System.Drawing.Point(102, 94)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox1.TabIndex = 7
+        Me.txtBoxName.AccessibleName = "txtBox1"
+        Me.txtBoxName.Location = New System.Drawing.Point(102, 94)
+        Me.txtBoxName.Name = "txtBoxName"
+        Me.txtBoxName.Size = New System.Drawing.Size(209, 20)
+        Me.txtBoxName.TabIndex = 7
         '
-        'TextBox3
+        'txtBoxaddress
         '
-        Me.TextBox3.AccessibleName = "txtBox3"
-        Me.TextBox3.Location = New System.Drawing.Point(102, 159)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(209, 83)
-        Me.TextBox3.TabIndex = 9
+        Me.txtBoxaddress.AccessibleName = "txtBox3"
+        Me.txtBoxaddress.Location = New System.Drawing.Point(102, 159)
+        Me.txtBoxaddress.Multiline = True
+        Me.txtBoxaddress.Name = "txtBoxaddress"
+        Me.txtBoxaddress.Size = New System.Drawing.Size(209, 83)
+        Me.txtBoxaddress.TabIndex = 9
         '
-        'RadioButton1
+        'rbnLelaki
         '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.Location = New System.Drawing.Point(102, 290)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(53, 17)
-        Me.RadioButton1.TabIndex = 10
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "Lelaki"
-        Me.RadioButton1.UseVisualStyleBackColor = True
+        Me.rbnLelaki.AutoSize = True
+        Me.rbnLelaki.Location = New System.Drawing.Point(102, 290)
+        Me.rbnLelaki.Name = "rbnLelaki"
+        Me.rbnLelaki.Size = New System.Drawing.Size(53, 17)
+        Me.rbnLelaki.TabIndex = 10
+        Me.rbnLelaki.TabStop = True
+        Me.rbnLelaki.Text = "Lelaki"
+        Me.rbnLelaki.UseVisualStyleBackColor = True
         '
-        'RadioButton2
+        'rbnPerempuan
         '
-        Me.RadioButton2.AutoSize = True
-        Me.RadioButton2.Location = New System.Drawing.Point(102, 313)
-        Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(79, 17)
-        Me.RadioButton2.TabIndex = 11
-        Me.RadioButton2.TabStop = True
-        Me.RadioButton2.Text = "Perempuan"
-        Me.RadioButton2.UseVisualStyleBackColor = True
+        Me.rbnPerempuan.AutoSize = True
+        Me.rbnPerempuan.Location = New System.Drawing.Point(102, 313)
+        Me.rbnPerempuan.Name = "rbnPerempuan"
+        Me.rbnPerempuan.Size = New System.Drawing.Size(79, 17)
+        Me.rbnPerempuan.TabIndex = 11
+        Me.rbnPerempuan.TabStop = True
+        Me.rbnPerempuan.Text = "Perempuan"
+        Me.rbnPerempuan.UseVisualStyleBackColor = True
         '
-        'ComboBox1
+        'cbNegeri
         '
-        Me.ComboBox1.AccessibleName = "txtBox4"
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Perlis", "Kedah", "Pulau Pinang", "Perak", "Selangor", "Negeri Sembilan", "Melaka", "Johor", "Terengganu", "Kelatan", "Sarawak", "Sabah"})
-        Me.ComboBox1.Location = New System.Drawing.Point(102, 253)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(209, 21)
-        Me.ComboBox1.TabIndex = 12
+        Me.cbNegeri.AccessibleName = "txtBox4"
+        Me.cbNegeri.FormattingEnabled = True
+        Me.cbNegeri.Items.AddRange(New Object() {"Perlis", "Kedah", "Pulau Pinang", "Perak", "Selangor", "Negeri Sembilan", "Melaka", "Johor", "Terengganu", "Kelatan", "Sarawak", "Sabah"})
+        Me.cbNegeri.Location = New System.Drawing.Point(102, 253)
+        Me.cbNegeri.Name = "cbNegeri"
+        Me.cbNegeri.Size = New System.Drawing.Size(209, 21)
+        Me.cbNegeri.TabIndex = 12
         '
-        'TextBox2
+        'txtBoxTele
         '
-        Me.TextBox2.Location = New System.Drawing.Point(102, 130)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(209, 20)
-        Me.TextBox2.TabIndex = 13
+        Me.txtBoxTele.Location = New System.Drawing.Point(102, 130)
+        Me.txtBoxTele.Name = "txtBoxTele"
+        Me.txtBoxTele.Size = New System.Drawing.Size(209, 20)
+        Me.txtBoxTele.TabIndex = 13
         '
-        'Label7
+        'lblBayaran
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(430, 94)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(89, 13)
-        Me.Label7.TabIndex = 14
-        Me.Label7.Text = "Kaedah Bayaran:"
+        Me.lblBayaran.AutoSize = True
+        Me.lblBayaran.Location = New System.Drawing.Point(430, 94)
+        Me.lblBayaran.Name = "lblBayaran"
+        Me.lblBayaran.Size = New System.Drawing.Size(89, 13)
+        Me.lblBayaran.TabIndex = 14
+        Me.lblBayaran.Text = "Kaedah Bayaran:"
         '
-        'Label8
+        'lblPerisa
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(474, 184)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(42, 13)
-        Me.Label8.TabIndex = 15
-        Me.Label8.Text = "Perisa :"
+        Me.lblPerisa.AutoSize = True
+        Me.lblPerisa.Location = New System.Drawing.Point(474, 184)
+        Me.lblPerisa.Name = "lblPerisa"
+        Me.lblPerisa.Size = New System.Drawing.Size(42, 13)
+        Me.lblPerisa.TabIndex = 15
+        Me.lblPerisa.Text = "Perisa :"
         '
-        'CheckBox1
+        'ckbMilo
         '
-        Me.CheckBox1.AutoSize = True
-        Me.CheckBox1.Location = New System.Drawing.Point(541, 180)
-        Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(45, 17)
-        Me.CheckBox1.TabIndex = 16
-        Me.CheckBox1.Text = "Milo"
-        Me.CheckBox1.UseVisualStyleBackColor = True
+        Me.ckbMilo.AutoSize = True
+        Me.ckbMilo.Location = New System.Drawing.Point(541, 180)
+        Me.ckbMilo.Name = "ckbMilo"
+        Me.ckbMilo.Size = New System.Drawing.Size(45, 17)
+        Me.ckbMilo.TabIndex = 16
+        Me.ckbMilo.Text = "Milo"
+        Me.ckbMilo.UseVisualStyleBackColor = True
         '
-        'CheckBox2
+        'ckbPisang
         '
-        Me.CheckBox2.AutoSize = True
-        Me.CheckBox2.Location = New System.Drawing.Point(541, 271)
-        Me.CheckBox2.Name = "CheckBox2"
-        Me.CheckBox2.Size = New System.Drawing.Size(58, 17)
-        Me.CheckBox2.TabIndex = 17
-        Me.CheckBox2.Text = "Pisang"
-        Me.CheckBox2.UseVisualStyleBackColor = True
+        Me.ckbPisang.AutoSize = True
+        Me.ckbPisang.Location = New System.Drawing.Point(541, 271)
+        Me.ckbPisang.Name = "ckbPisang"
+        Me.ckbPisang.Size = New System.Drawing.Size(58, 17)
+        Me.ckbPisang.TabIndex = 17
+        Me.ckbPisang.Text = "Pisang"
+        Me.ckbPisang.UseVisualStyleBackColor = True
         '
-        'CheckBox3
+        'ckbStrawberi
         '
-        Me.CheckBox3.AutoSize = True
-        Me.CheckBox3.Location = New System.Drawing.Point(541, 248)
-        Me.CheckBox3.Name = "CheckBox3"
-        Me.CheckBox3.Size = New System.Drawing.Size(70, 17)
-        Me.CheckBox3.TabIndex = 18
-        Me.CheckBox3.Text = "Strawberi"
-        Me.CheckBox3.UseVisualStyleBackColor = True
+        Me.ckbStrawberi.AutoSize = True
+        Me.ckbStrawberi.Location = New System.Drawing.Point(541, 248)
+        Me.ckbStrawberi.Name = "ckbStrawberi"
+        Me.ckbStrawberi.Size = New System.Drawing.Size(70, 17)
+        Me.ckbStrawberi.TabIndex = 18
+        Me.ckbStrawberi.Text = "Strawberi"
+        Me.ckbStrawberi.UseVisualStyleBackColor = True
         '
-        'CheckBox4
+        'ckbCoklat
         '
-        Me.CheckBox4.AutoSize = True
-        Me.CheckBox4.Location = New System.Drawing.Point(541, 225)
-        Me.CheckBox4.Name = "CheckBox4"
-        Me.CheckBox4.Size = New System.Drawing.Size(56, 17)
-        Me.CheckBox4.TabIndex = 19
-        Me.CheckBox4.Text = "Coklat"
-        Me.CheckBox4.UseVisualStyleBackColor = True
+        Me.ckbCoklat.AutoSize = True
+        Me.ckbCoklat.Location = New System.Drawing.Point(541, 225)
+        Me.ckbCoklat.Name = "ckbCoklat"
+        Me.ckbCoklat.Size = New System.Drawing.Size(56, 17)
+        Me.ckbCoklat.TabIndex = 19
+        Me.ckbCoklat.Text = "Coklat"
+        Me.ckbCoklat.UseVisualStyleBackColor = True
         '
-        'CheckBox5
+        'ckbKopi
         '
-        Me.CheckBox5.AutoSize = True
-        Me.CheckBox5.Location = New System.Drawing.Point(541, 202)
-        Me.CheckBox5.Name = "CheckBox5"
-        Me.CheckBox5.Size = New System.Drawing.Size(47, 17)
-        Me.CheckBox5.TabIndex = 20
-        Me.CheckBox5.Text = "Kopi"
-        Me.CheckBox5.UseVisualStyleBackColor = True
+        Me.ckbKopi.AutoSize = True
+        Me.ckbKopi.Location = New System.Drawing.Point(541, 202)
+        Me.ckbKopi.Name = "ckbKopi"
+        Me.ckbKopi.Size = New System.Drawing.Size(47, 17)
+        Me.ckbKopi.TabIndex = 20
+        Me.ckbKopi.Text = "Kopi"
+        Me.ckbKopi.UseVisualStyleBackColor = True
         '
-        'RadioButton3
+        'rbnCash
         '
-        Me.RadioButton3.AutoSize = True
-        Me.RadioButton3.Location = New System.Drawing.Point(541, 94)
-        Me.RadioButton3.Name = "RadioButton3"
-        Me.RadioButton3.Size = New System.Drawing.Size(49, 17)
-        Me.RadioButton3.TabIndex = 21
-        Me.RadioButton3.TabStop = True
-        Me.RadioButton3.Text = "Cash"
-        Me.RadioButton3.UseVisualStyleBackColor = True
+        Me.rbnCash.AutoSize = True
+        Me.rbnCash.Location = New System.Drawing.Point(541, 94)
+        Me.rbnCash.Name = "rbnCash"
+        Me.rbnCash.Size = New System.Drawing.Size(49, 17)
+        Me.rbnCash.TabIndex = 21
+        Me.rbnCash.TabStop = True
+        Me.rbnCash.Text = "Cash"
+        Me.rbnCash.UseVisualStyleBackColor = True
         '
-        'RadioButton4
+        'rbnCashless
         '
-        Me.RadioButton4.AutoSize = True
-        Me.RadioButton4.Location = New System.Drawing.Point(541, 117)
-        Me.RadioButton4.Name = "RadioButton4"
-        Me.RadioButton4.Size = New System.Drawing.Size(67, 17)
-        Me.RadioButton4.TabIndex = 22
-        Me.RadioButton4.TabStop = True
-        Me.RadioButton4.Text = "Cashless"
-        Me.RadioButton4.UseVisualStyleBackColor = True
+        Me.rbnCashless.AutoSize = True
+        Me.rbnCashless.Location = New System.Drawing.Point(541, 117)
+        Me.rbnCashless.Name = "rbnCashless"
+        Me.rbnCashless.Size = New System.Drawing.Size(67, 17)
+        Me.rbnCashless.TabIndex = 22
+        Me.rbnCashless.TabStop = True
+        Me.rbnCashless.Text = "Cashless"
+        Me.rbnCashless.UseVisualStyleBackColor = True
         '
-        'Label9
+        'lblTarikh
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(474, 313)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(37, 13)
-        Me.Label9.TabIndex = 23
-        Me.Label9.Text = "Tarikh"
+        Me.lblTarikh.AutoSize = True
+        Me.lblTarikh.Location = New System.Drawing.Point(474, 305)
+        Me.lblTarikh.Name = "lblTarikh"
+        Me.lblTarikh.Size = New System.Drawing.Size(37, 13)
+        Me.lblTarikh.TabIndex = 23
+        Me.lblTarikh.Text = "Tarikh"
         '
-        'DateTimePicker1
+        'dtpTarikh
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(541, 305)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
-        Me.DateTimePicker1.TabIndex = 24
+        Me.dtpTarikh.Location = New System.Drawing.Point(541, 305)
+        Me.dtpTarikh.Name = "dtpTarikh"
+        Me.dtpTarikh.Size = New System.Drawing.Size(200, 20)
+        Me.dtpTarikh.TabIndex = 24
         '
-        'DataGridView1
+        'dgv1
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Bil, Me.Nama, Me.No_tel})
-        Me.DataGridView1.Location = New System.Drawing.Point(27, 362)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(318, 150)
-        Me.DataGridView1.TabIndex = 25
+        Me.dgv1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Bil, Me.Nama, Me.No_tel})
+        Me.dgv1.Location = New System.Drawing.Point(27, 362)
+        Me.dgv1.Name = "dgv1"
+        Me.dgv1.RowHeadersWidth = 51
+        Me.dgv1.Size = New System.Drawing.Size(318, 150)
+        Me.dgv1.TabIndex = 25
         '
         'Bil
         '
         Me.Bil.HeaderText = "Bil"
+        Me.Bil.MinimumWidth = 6
         Me.Bil.Name = "Bil"
+        Me.Bil.Width = 125
         '
         'Nama
         '
         Me.Nama.HeaderText = "Nama"
+        Me.Nama.MinimumWidth = 6
         Me.Nama.Name = "Nama"
+        Me.Nama.Width = 125
         '
         'No_tel
         '
         Me.No_tel.HeaderText = "No_tel"
+        Me.No_tel.MinimumWidth = 6
         Me.No_tel.Name = "No_tel"
+        Me.No_tel.Width = 125
         '
-        'Button1
+        'btnCreate
         '
-        Me.Button1.Location = New System.Drawing.Point(31, 518)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 26
-        Me.Button1.Text = "Create"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnCreate.Location = New System.Drawing.Point(31, 518)
+        Me.btnCreate.Name = "btnCreate"
+        Me.btnCreate.Size = New System.Drawing.Size(75, 23)
+        Me.btnCreate.TabIndex = 26
+        Me.btnCreate.Text = "Create"
+        Me.btnCreate.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btnDelete
         '
-        Me.Button2.Location = New System.Drawing.Point(274, 518)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 27
-        Me.Button2.Text = "Delete"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btnDelete.Location = New System.Drawing.Point(274, 518)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(75, 23)
+        Me.btnDelete.TabIndex = 27
+        Me.btnDelete.Text = "Delete"
+        Me.btnDelete.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnUpdate
         '
-        Me.Button3.Location = New System.Drawing.Point(193, 518)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 28
-        Me.Button3.Text = "Update"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnUpdate.Location = New System.Drawing.Point(193, 518)
+        Me.btnUpdate.Name = "btnUpdate"
+        Me.btnUpdate.Size = New System.Drawing.Size(75, 23)
+        Me.btnUpdate.TabIndex = 28
+        Me.btnUpdate.Text = "Update"
+        Me.btnUpdate.UseVisualStyleBackColor = True
         '
-        'Button4
+        'btnRead
         '
-        Me.Button4.Location = New System.Drawing.Point(112, 518)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
-        Me.Button4.TabIndex = 29
-        Me.Button4.Text = "Read"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.btnRead.Location = New System.Drawing.Point(112, 518)
+        Me.btnRead.Name = "btnRead"
+        Me.btnRead.Size = New System.Drawing.Size(75, 23)
+        Me.btnRead.TabIndex = 29
+        Me.btnRead.Text = "Read"
+        Me.btnRead.UseVisualStyleBackColor = True
         '
         'MaklumatPelanggan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 640)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.DataGridView1)
-        Me.Controls.Add(Me.DateTimePicker1)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.RadioButton4)
-        Me.Controls.Add(Me.RadioButton3)
-        Me.Controls.Add(Me.CheckBox5)
-        Me.Controls.Add(Me.CheckBox4)
-        Me.Controls.Add(Me.CheckBox3)
-        Me.Controls.Add(Me.CheckBox2)
-        Me.Controls.Add(Me.CheckBox1)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.ComboBox1)
-        Me.Controls.Add(Me.RadioButton2)
-        Me.Controls.Add(Me.RadioButton1)
-        Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(827, 569)
+        Me.Controls.Add(Me.btnRead)
+        Me.Controls.Add(Me.btnUpdate)
+        Me.Controls.Add(Me.btnDelete)
+        Me.Controls.Add(Me.btnCreate)
+        Me.Controls.Add(Me.dgv1)
+        Me.Controls.Add(Me.dtpTarikh)
+        Me.Controls.Add(Me.lblTarikh)
+        Me.Controls.Add(Me.rbnCashless)
+        Me.Controls.Add(Me.rbnCash)
+        Me.Controls.Add(Me.ckbKopi)
+        Me.Controls.Add(Me.ckbCoklat)
+        Me.Controls.Add(Me.ckbStrawberi)
+        Me.Controls.Add(Me.ckbPisang)
+        Me.Controls.Add(Me.ckbMilo)
+        Me.Controls.Add(Me.lblPerisa)
+        Me.Controls.Add(Me.lblBayaran)
+        Me.Controls.Add(Me.txtBoxTele)
+        Me.Controls.Add(Me.cbNegeri)
+        Me.Controls.Add(Me.rbnPerempuan)
+        Me.Controls.Add(Me.rbnLelaki)
+        Me.Controls.Add(Me.txtBoxaddress)
+        Me.Controls.Add(Me.txtBoxName)
+        Me.Controls.Add(Me.lblJantina)
+        Me.Controls.Add(Me.lblNegeri)
+        Me.Controls.Add(Me.lblAlamat)
+        Me.Controls.Add(Me.lblTele)
+        Me.Controls.Add(Me.lblNama)
+        Me.Controls.Add(Me.lblMaklumatPelanggan)
         Me.Name = "MaklumatPelanggan"
         Me.Text = "MaklumatPelanggan"
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgv1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents RadioButton1 As RadioButton
-    Friend WithEvents RadioButton2 As RadioButton
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents CheckBox1 As CheckBox
-    Friend WithEvents CheckBox2 As CheckBox
-    Friend WithEvents CheckBox3 As CheckBox
-    Friend WithEvents CheckBox4 As CheckBox
-    Friend WithEvents CheckBox5 As CheckBox
-    Friend WithEvents RadioButton3 As RadioButton
-    Friend WithEvents RadioButton4 As RadioButton
+    Friend WithEvents lblMaklumatPelanggan As Label
+    Friend WithEvents lblNama As Label
+    Friend WithEvents lblTele As Label
+    Friend WithEvents lblAlamat As Label
+    Friend WithEvents lblJantina As Label
+    Friend WithEvents lblNegeri As Label
+    Friend WithEvents txtBoxName As TextBox
+    Friend WithEvents txtBoxaddress As TextBox
+    Friend WithEvents rbnLelaki As RadioButton
+    Friend WithEvents rbnPerempuan As RadioButton
+    Friend WithEvents cbNegeri As ComboBox
+    Friend WithEvents txtBoxTele As TextBox
+    Friend WithEvents lblBayaran As Label
+    Friend WithEvents lblPerisa As Label
+    Friend WithEvents ckbMilo As CheckBox
+    Friend WithEvents ckbPisang As CheckBox
+    Friend WithEvents ckbStrawberi As CheckBox
+    Friend WithEvents ckbCoklat As CheckBox
+    Friend WithEvents ckbKopi As CheckBox
+    Friend WithEvents rbnCash As RadioButton
+    Friend WithEvents rbnCashless As RadioButton
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
-    Friend WithEvents Label9 As Label
-    Friend WithEvents DateTimePicker1 As DateTimePicker
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents lblTarikh As Label
+    Friend WithEvents dtpTarikh As DateTimePicker
+    Friend WithEvents dgv1 As DataGridView
     Friend WithEvents Bil As DataGridViewTextBoxColumn
     Friend WithEvents Nama As DataGridViewTextBoxColumn
     Friend WithEvents No_tel As DataGridViewTextBoxColumn
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents btnCreate As Button
+    Friend WithEvents btnDelete As Button
+    Friend WithEvents btnUpdate As Button
+    Friend WithEvents btnRead As Button
 End Class
