@@ -1,4 +1,4 @@
-﻿Public Class MaklumatPelanggan
+﻿Public Class frmMaklumatPelanggan
     Private Sub Label9_Click(sender As Object, e As EventArgs) Handles lblTarikh.Click
 
     End Sub
@@ -7,7 +7,7 @@
 
     End Sub
 
-    Private Sub dgv1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv1.CellContentClick
+    Private Sub dgv1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgvData.CellContentClick
 
     End Sub
 End Class
