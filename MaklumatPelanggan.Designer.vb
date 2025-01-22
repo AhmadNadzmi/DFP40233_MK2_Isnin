@@ -54,11 +54,11 @@ Partial Class frmMaklumatPelanggan
         Me.clnBil = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.clnNama = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.clnNotel = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.gbxBoxBayaran = New System.Windows.Forms.GroupBox()
-        Me.gbxBoxJantina = New System.Windows.Forms.GroupBox()
+        Me.gbxBayaran = New System.Windows.Forms.GroupBox()
+        Me.gbxJantina = New System.Windows.Forms.GroupBox()
         CType(Me.dgvData, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.gbxBoxBayaran.SuspendLayout()
-        Me.gbxBoxJantina.SuspendLayout()
+        Me.gbxBayaran.SuspendLayout()
+        Me.gbxJantina.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblMaklumatPelanggan
@@ -373,25 +373,25 @@ Partial Class frmMaklumatPelanggan
         Me.clnNotel.Name = "clnNotel"
         Me.clnNotel.Width = 125
         '
-        'gbxBoxBayaran
+        'gbxBayaran
         '
-        Me.gbxBoxBayaran.Controls.Add(Me.rbnCash)
-        Me.gbxBoxBayaran.Controls.Add(Me.rbnCashless)
-        Me.gbxBoxBayaran.Location = New System.Drawing.Point(691, 93)
-        Me.gbxBoxBayaran.Name = "gbxBoxBayaran"
-        Me.gbxBoxBayaran.Size = New System.Drawing.Size(200, 89)
-        Me.gbxBoxBayaran.TabIndex = 30
-        Me.gbxBoxBayaran.TabStop = False
+        Me.gbxBayaran.Controls.Add(Me.rbnCash)
+        Me.gbxBayaran.Controls.Add(Me.rbnCashless)
+        Me.gbxBayaran.Location = New System.Drawing.Point(691, 93)
+        Me.gbxBayaran.Name = "gbxBayaran"
+        Me.gbxBayaran.Size = New System.Drawing.Size(200, 89)
+        Me.gbxBayaran.TabIndex = 30
+        Me.gbxBayaran.TabStop = False
         '
-        'gbxBoxJantina
+        'gbxJantina
         '
-        Me.gbxBoxJantina.Controls.Add(Me.rbnLelaki)
-        Me.gbxBoxJantina.Controls.Add(Me.rbnPerempuan)
-        Me.gbxBoxJantina.Location = New System.Drawing.Point(136, 334)
-        Me.gbxBoxJantina.Name = "gbxBoxJantina"
-        Me.gbxBoxJantina.Size = New System.Drawing.Size(138, 88)
-        Me.gbxBoxJantina.TabIndex = 23
-        Me.gbxBoxJantina.TabStop = False
+        Me.gbxJantina.Controls.Add(Me.rbnLelaki)
+        Me.gbxJantina.Controls.Add(Me.rbnPerempuan)
+        Me.gbxJantina.Location = New System.Drawing.Point(136, 334)
+        Me.gbxJantina.Name = "gbxJantina"
+        Me.gbxJantina.Size = New System.Drawing.Size(138, 88)
+        Me.gbxJantina.TabIndex = 23
+        Me.gbxJantina.TabStop = False
         '
         'frmMaklumatPelanggan
         '
@@ -399,8 +399,8 @@ Partial Class frmMaklumatPelanggan
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(1103, 700)
-        Me.Controls.Add(Me.gbxBoxJantina)
-        Me.Controls.Add(Me.gbxBoxBayaran)
+        Me.Controls.Add(Me.gbxJantina)
+        Me.Controls.Add(Me.gbxBayaran)
         Me.Controls.Add(Me.btnRead)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnDelete)
@@ -429,10 +429,10 @@ Partial Class frmMaklumatPelanggan
         Me.Name = "frmMaklumatPelanggan"
         Me.Text = "MaklumatPelanggan"
         CType(Me.dgvData, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.gbxBoxBayaran.ResumeLayout(False)
-        Me.gbxBoxBayaran.PerformLayout()
-        Me.gbxBoxJantina.ResumeLayout(False)
-        Me.gbxBoxJantina.PerformLayout()
+        Me.gbxBayaran.ResumeLayout(False)
+        Me.gbxBayaran.PerformLayout()
+        Me.gbxJantina.ResumeLayout(False)
+        Me.gbxJantina.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -470,6 +470,6 @@ Partial Class frmMaklumatPelanggan
     Friend WithEvents clnBil As DataGridViewTextBoxColumn
     Friend WithEvents clnNama As DataGridViewTextBoxColumn
     Friend WithEvents clnNotel As DataGridViewTextBoxColumn
-    Friend WithEvents gbxBoxBayaran As GroupBox
-    Friend WithEvents gbxBoxJantina As GroupBox
+    Friend WithEvents gbxBayaran As GroupBox
+    Friend WithEvents gbxJantina As GroupBox
 End Class
