@@ -24,16 +24,16 @@ Partial Class frmMaklumatPelanggan
     Private Sub InitializeComponent()
         Me.lblMaklumatPelanggan = New System.Windows.Forms.Label()
         Me.lblNama = New System.Windows.Forms.Label()
-        Me.lblTele = New System.Windows.Forms.Label()
+        Me.lblTelefon = New System.Windows.Forms.Label()
         Me.lblAlamat = New System.Windows.Forms.Label()
         Me.lblJantina = New System.Windows.Forms.Label()
         Me.lblNegeri = New System.Windows.Forms.Label()
-        Me.txtBoxName = New System.Windows.Forms.TextBox()
-        Me.txtBoxaddress = New System.Windows.Forms.TextBox()
+        Me.txtName = New System.Windows.Forms.TextBox()
+        Me.txtaddress = New System.Windows.Forms.TextBox()
         Me.rbnLelaki = New System.Windows.Forms.RadioButton()
         Me.rbnPerempuan = New System.Windows.Forms.RadioButton()
-        Me.cbNegeri = New System.Windows.Forms.ComboBox()
-        Me.txtBoxTele = New System.Windows.Forms.TextBox()
+        Me.cbbNegeri = New System.Windows.Forms.ComboBox()
+        Me.txtTelefon = New System.Windows.Forms.TextBox()
         Me.lblBayaran = New System.Windows.Forms.Label()
         Me.lblPerisa = New System.Windows.Forms.Label()
         Me.ckbMilo = New System.Windows.Forms.CheckBox()
@@ -82,15 +82,15 @@ Partial Class frmMaklumatPelanggan
         Me.lblNama.TabIndex = 2
         Me.lblNama.Text = "Nama"
         '
-        'lblTele
+        'lblTelefon
         '
-        Me.lblTele.AutoSize = True
-        Me.lblTele.Location = New System.Drawing.Point(32, 160)
-        Me.lblTele.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.lblTele.Name = "lblTele"
-        Me.lblTele.Size = New System.Drawing.Size(74, 16)
-        Me.lblTele.TabIndex = 3
-        Me.lblTele.Text = "No.Telefon"
+        Me.lblTelefon.AutoSize = True
+        Me.lblTelefon.Location = New System.Drawing.Point(32, 160)
+        Me.lblTelefon.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.lblTelefon.Name = "lblTelefon"
+        Me.lblTelefon.Size = New System.Drawing.Size(74, 16)
+        Me.lblTelefon.TabIndex = 3
+        Me.lblTelefon.Text = "No.Telefon"
         '
         'lblAlamat
         '
@@ -122,24 +122,24 @@ Partial Class frmMaklumatPelanggan
         Me.lblNegeri.TabIndex = 5
         Me.lblNegeri.Text = "Negeri"
         '
-        'txtBoxName
+        'txtName
         '
-        Me.txtBoxName.AccessibleName = "txtBox1"
-        Me.txtBoxName.Location = New System.Drawing.Point(136, 116)
-        Me.txtBoxName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.txtBoxName.Name = "txtBoxName"
-        Me.txtBoxName.Size = New System.Drawing.Size(277, 22)
-        Me.txtBoxName.TabIndex = 7
+        Me.txtName.AccessibleName = "txtBox1"
+        Me.txtName.Location = New System.Drawing.Point(136, 116)
+        Me.txtName.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtName.Name = "txtName"
+        Me.txtName.Size = New System.Drawing.Size(277, 22)
+        Me.txtName.TabIndex = 7
         '
-        'txtBoxaddress
+        'txtaddress
         '
-        Me.txtBoxaddress.AccessibleName = "txtBox3"
-        Me.txtBoxaddress.Location = New System.Drawing.Point(136, 196)
-        Me.txtBoxaddress.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.txtBoxaddress.Multiline = True
-        Me.txtBoxaddress.Name = "txtBoxaddress"
-        Me.txtBoxaddress.Size = New System.Drawing.Size(277, 101)
-        Me.txtBoxaddress.TabIndex = 9
+        Me.txtaddress.AccessibleName = "txtBox3"
+        Me.txtaddress.Location = New System.Drawing.Point(136, 196)
+        Me.txtaddress.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtaddress.Multiline = True
+        Me.txtaddress.Name = "txtaddress"
+        Me.txtaddress.Size = New System.Drawing.Size(277, 101)
+        Me.txtaddress.TabIndex = 9
         '
         'rbnLelaki
         '
@@ -165,24 +165,24 @@ Partial Class frmMaklumatPelanggan
         Me.rbnPerempuan.Text = "Perempuan"
         Me.rbnPerempuan.UseVisualStyleBackColor = True
         '
-        'cbNegeri
+        'cbbNegeri
         '
-        Me.cbNegeri.AccessibleName = "txtBox4"
-        Me.cbNegeri.FormattingEnabled = True
-        Me.cbNegeri.Items.AddRange(New Object() {"Perlis", "Kedah", "Pulau Pinang", "Perak", "Selangor", "Negeri Sembilan", "Melaka", "Johor", "Terengganu", "Kelatan", "Sarawak", "Sabah"})
-        Me.cbNegeri.Location = New System.Drawing.Point(136, 311)
-        Me.cbNegeri.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.cbNegeri.Name = "cbNegeri"
-        Me.cbNegeri.Size = New System.Drawing.Size(277, 24)
-        Me.cbNegeri.TabIndex = 12
+        Me.cbbNegeri.AccessibleName = "txtBox4"
+        Me.cbbNegeri.FormattingEnabled = True
+        Me.cbbNegeri.Items.AddRange(New Object() {"Perlis", "Kedah", "Pulau Pinang", "Perak", "Selangor", "Negeri Sembilan", "Melaka", "Johor", "Terengganu", "Kelatan", "Sarawak", "Sabah"})
+        Me.cbbNegeri.Location = New System.Drawing.Point(136, 311)
+        Me.cbbNegeri.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cbbNegeri.Name = "cbbNegeri"
+        Me.cbbNegeri.Size = New System.Drawing.Size(277, 24)
+        Me.cbbNegeri.TabIndex = 12
         '
-        'txtBoxTele
+        'txtTelefon
         '
-        Me.txtBoxTele.Location = New System.Drawing.Point(136, 160)
-        Me.txtBoxTele.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
-        Me.txtBoxTele.Name = "txtBoxTele"
-        Me.txtBoxTele.Size = New System.Drawing.Size(277, 22)
-        Me.txtBoxTele.TabIndex = 13
+        Me.txtTelefon.Location = New System.Drawing.Point(136, 160)
+        Me.txtTelefon.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.txtTelefon.Name = "txtTelefon"
+        Me.txtTelefon.Size = New System.Drawing.Size(277, 22)
+        Me.txtTelefon.TabIndex = 13
         '
         'lblBayaran
         '
@@ -415,14 +415,14 @@ Partial Class frmMaklumatPelanggan
         Me.Controls.Add(Me.ckbMilo)
         Me.Controls.Add(Me.lblPerisa)
         Me.Controls.Add(Me.lblBayaran)
-        Me.Controls.Add(Me.txtBoxTele)
-        Me.Controls.Add(Me.cbNegeri)
-        Me.Controls.Add(Me.txtBoxaddress)
-        Me.Controls.Add(Me.txtBoxName)
+        Me.Controls.Add(Me.txtTelefon)
+        Me.Controls.Add(Me.cbbNegeri)
+        Me.Controls.Add(Me.txtaddress)
+        Me.Controls.Add(Me.txtName)
         Me.Controls.Add(Me.lblJantina)
         Me.Controls.Add(Me.lblNegeri)
         Me.Controls.Add(Me.lblAlamat)
-        Me.Controls.Add(Me.lblTele)
+        Me.Controls.Add(Me.lblTelefon)
         Me.Controls.Add(Me.lblNama)
         Me.Controls.Add(Me.lblMaklumatPelanggan)
         Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
@@ -440,16 +440,16 @@ Partial Class frmMaklumatPelanggan
 
     Friend WithEvents lblMaklumatPelanggan As Label
     Friend WithEvents lblNama As Label
-    Friend WithEvents lblTele As Label
+    Friend WithEvents lblTelefon As Label
     Friend WithEvents lblAlamat As Label
     Friend WithEvents lblJantina As Label
     Friend WithEvents lblNegeri As Label
-    Friend WithEvents txtBoxName As TextBox
-    Friend WithEvents txtBoxaddress As TextBox
+    Friend WithEvents txtName As TextBox
+    Friend WithEvents txtaddress As TextBox
     Friend WithEvents rbnLelaki As RadioButton
     Friend WithEvents rbnPerempuan As RadioButton
-    Friend WithEvents cbNegeri As ComboBox
-    Friend WithEvents txtBoxTele As TextBox
+    Friend WithEvents cbbNegeri As ComboBox
+    Friend WithEvents txtTelefon As TextBox
     Friend WithEvents lblBayaran As Label
     Friend WithEvents lblPerisa As Label
     Friend WithEvents ckbMilo As CheckBox
