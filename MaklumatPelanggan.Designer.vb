@@ -54,7 +54,11 @@ Partial Class frmMaklumatPelanggan
         Me.clnBil = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.clnNama = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.clnNotel = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.gbxBox1 = New System.Windows.Forms.GroupBox()
+        Me.gbxBox2 = New System.Windows.Forms.GroupBox()
         CType(Me.dgvData, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.gbxBox1.SuspendLayout()
+        Me.gbxBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblMaklumatPelanggan
@@ -140,7 +144,7 @@ Partial Class frmMaklumatPelanggan
         'rbnLelaki
         '
         Me.rbnLelaki.AutoSize = True
-        Me.rbnLelaki.Location = New System.Drawing.Point(136, 357)
+        Me.rbnLelaki.Location = New System.Drawing.Point(7, 31)
         Me.rbnLelaki.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rbnLelaki.Name = "rbnLelaki"
         Me.rbnLelaki.Size = New System.Drawing.Size(64, 20)
@@ -152,7 +156,7 @@ Partial Class frmMaklumatPelanggan
         'rbnPerempuan
         '
         Me.rbnPerempuan.AutoSize = True
-        Me.rbnPerempuan.Location = New System.Drawing.Point(136, 385)
+        Me.rbnPerempuan.Location = New System.Drawing.Point(7, 58)
         Me.rbnPerempuan.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rbnPerempuan.Name = "rbnPerempuan"
         Me.rbnPerempuan.Size = New System.Drawing.Size(98, 20)
@@ -258,7 +262,7 @@ Partial Class frmMaklumatPelanggan
         'rbnCash
         '
         Me.rbnCash.AutoSize = True
-        Me.rbnCash.Location = New System.Drawing.Point(721, 116)
+        Me.rbnCash.Location = New System.Drawing.Point(32, 26)
         Me.rbnCash.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rbnCash.Name = "rbnCash"
         Me.rbnCash.Size = New System.Drawing.Size(59, 20)
@@ -270,7 +274,7 @@ Partial Class frmMaklumatPelanggan
         'rbnCashless
         '
         Me.rbnCashless.AutoSize = True
-        Me.rbnCashless.Location = New System.Drawing.Point(721, 144)
+        Me.rbnCashless.Location = New System.Drawing.Point(32, 54)
         Me.rbnCashless.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.rbnCashless.Name = "rbnCashless"
         Me.rbnCashless.Size = New System.Drawing.Size(84, 20)
@@ -369,12 +373,34 @@ Partial Class frmMaklumatPelanggan
         Me.clnNotel.Name = "clnNotel"
         Me.clnNotel.Width = 125
         '
+        'gbxBox1
+        '
+        Me.gbxBox1.Controls.Add(Me.rbnCash)
+        Me.gbxBox1.Controls.Add(Me.rbnCashless)
+        Me.gbxBox1.Location = New System.Drawing.Point(691, 93)
+        Me.gbxBox1.Name = "gbxBox1"
+        Me.gbxBox1.Size = New System.Drawing.Size(200, 89)
+        Me.gbxBox1.TabIndex = 30
+        Me.gbxBox1.TabStop = False
+        '
+        'gbxBox2
+        '
+        Me.gbxBox2.Controls.Add(Me.rbnLelaki)
+        Me.gbxBox2.Controls.Add(Me.rbnPerempuan)
+        Me.gbxBox2.Location = New System.Drawing.Point(136, 334)
+        Me.gbxBox2.Name = "gbxBox2"
+        Me.gbxBox2.Size = New System.Drawing.Size(138, 88)
+        Me.gbxBox2.TabIndex = 23
+        Me.gbxBox2.TabStop = False
+        '
         'frmMaklumatPelanggan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(1103, 700)
+        Me.Controls.Add(Me.gbxBox2)
+        Me.Controls.Add(Me.gbxBox1)
         Me.Controls.Add(Me.btnRead)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnDelete)
@@ -382,8 +408,6 @@ Partial Class frmMaklumatPelanggan
         Me.Controls.Add(Me.dgvData)
         Me.Controls.Add(Me.dtpTarikh)
         Me.Controls.Add(Me.lblTarikh)
-        Me.Controls.Add(Me.rbnCashless)
-        Me.Controls.Add(Me.rbnCash)
         Me.Controls.Add(Me.ckbKopi)
         Me.Controls.Add(Me.ckbCoklat)
         Me.Controls.Add(Me.ckbStrawberi)
@@ -393,8 +417,6 @@ Partial Class frmMaklumatPelanggan
         Me.Controls.Add(Me.lblBayaran)
         Me.Controls.Add(Me.txtBoxTele)
         Me.Controls.Add(Me.cbNegeri)
-        Me.Controls.Add(Me.rbnPerempuan)
-        Me.Controls.Add(Me.rbnLelaki)
         Me.Controls.Add(Me.txtBoxaddress)
         Me.Controls.Add(Me.txtBoxName)
         Me.Controls.Add(Me.lblJantina)
@@ -407,6 +429,10 @@ Partial Class frmMaklumatPelanggan
         Me.Name = "frmMaklumatPelanggan"
         Me.Text = "MaklumatPelanggan"
         CType(Me.dgvData, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.gbxBox1.ResumeLayout(False)
+        Me.gbxBox1.PerformLayout()
+        Me.gbxBox2.ResumeLayout(False)
+        Me.gbxBox2.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -444,4 +470,6 @@ Partial Class frmMaklumatPelanggan
     Friend WithEvents clnBil As DataGridViewTextBoxColumn
     Friend WithEvents clnNama As DataGridViewTextBoxColumn
     Friend WithEvents clnNotel As DataGridViewTextBoxColumn
+    Friend WithEvents gbxBox1 As GroupBox
+    Friend WithEvents gbxBox2 As GroupBox
 End Class
