@@ -34,7 +34,7 @@ Partial Class MaklumatPelanggan
         Me.RadioButton2 = New System.Windows.Forms.RadioButton()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Label7 = New System.Windows.Forms.Label()
+        Me.lblBayaran = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.CheckBox2 = New System.Windows.Forms.CheckBox()
