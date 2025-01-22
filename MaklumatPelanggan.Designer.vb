@@ -54,11 +54,11 @@ Partial Class frmMaklumatPelanggan
         Me.clnBil = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.clnNama = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.clnNotel = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.gbxBox1 = New System.Windows.Forms.GroupBox()
-        Me.gbxBox2 = New System.Windows.Forms.GroupBox()
+        Me.gbxBoxBayaran = New System.Windows.Forms.GroupBox()
+        Me.gbxBoxJantina = New System.Windows.Forms.GroupBox()
         CType(Me.dgvData, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.gbxBox1.SuspendLayout()
-        Me.gbxBox2.SuspendLayout()
+        Me.gbxBoxBayaran.SuspendLayout()
+        Me.gbxBoxJantina.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblMaklumatPelanggan
@@ -373,25 +373,25 @@ Partial Class frmMaklumatPelanggan
         Me.clnNotel.Name = "clnNotel"
         Me.clnNotel.Width = 125
         '
-        'gbxBox1
+        'gbxBoxBayaran
         '
-        Me.gbxBox1.Controls.Add(Me.rbnCash)
-        Me.gbxBox1.Controls.Add(Me.rbnCashless)
-        Me.gbxBox1.Location = New System.Drawing.Point(691, 93)
-        Me.gbxBox1.Name = "gbxBox1"
-        Me.gbxBox1.Size = New System.Drawing.Size(200, 89)
-        Me.gbxBox1.TabIndex = 30
-        Me.gbxBox1.TabStop = False
+        Me.gbxBoxBayaran.Controls.Add(Me.rbnCash)
+        Me.gbxBoxBayaran.Controls.Add(Me.rbnCashless)
+        Me.gbxBoxBayaran.Location = New System.Drawing.Point(691, 93)
+        Me.gbxBoxBayaran.Name = "gbxBoxBayaran"
+        Me.gbxBoxBayaran.Size = New System.Drawing.Size(200, 89)
+        Me.gbxBoxBayaran.TabIndex = 30
+        Me.gbxBoxBayaran.TabStop = False
         '
-        'gbxBox2
+        'gbxBoxJantina
         '
-        Me.gbxBox2.Controls.Add(Me.rbnLelaki)
-        Me.gbxBox2.Controls.Add(Me.rbnPerempuan)
-        Me.gbxBox2.Location = New System.Drawing.Point(136, 334)
-        Me.gbxBox2.Name = "gbxBox2"
-        Me.gbxBox2.Size = New System.Drawing.Size(138, 88)
-        Me.gbxBox2.TabIndex = 23
-        Me.gbxBox2.TabStop = False
+        Me.gbxBoxJantina.Controls.Add(Me.rbnLelaki)
+        Me.gbxBoxJantina.Controls.Add(Me.rbnPerempuan)
+        Me.gbxBoxJantina.Location = New System.Drawing.Point(136, 334)
+        Me.gbxBoxJantina.Name = "gbxBoxJantina"
+        Me.gbxBoxJantina.Size = New System.Drawing.Size(138, 88)
+        Me.gbxBoxJantina.TabIndex = 23
+        Me.gbxBoxJantina.TabStop = False
         '
         'frmMaklumatPelanggan
         '
@@ -399,8 +399,8 @@ Partial Class frmMaklumatPelanggan
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(1103, 700)
-        Me.Controls.Add(Me.gbxBox2)
-        Me.Controls.Add(Me.gbxBox1)
+        Me.Controls.Add(Me.gbxBoxJantina)
+        Me.Controls.Add(Me.gbxBoxBayaran)
         Me.Controls.Add(Me.btnRead)
         Me.Controls.Add(Me.btnUpdate)
         Me.Controls.Add(Me.btnDelete)
@@ -429,10 +429,10 @@ Partial Class frmMaklumatPelanggan
         Me.Name = "frmMaklumatPelanggan"
         Me.Text = "MaklumatPelanggan"
         CType(Me.dgvData, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.gbxBox1.ResumeLayout(False)
-        Me.gbxBox1.PerformLayout()
-        Me.gbxBox2.ResumeLayout(False)
-        Me.gbxBox2.PerformLayout()
+        Me.gbxBoxBayaran.ResumeLayout(False)
+        Me.gbxBoxBayaran.PerformLayout()
+        Me.gbxBoxJantina.ResumeLayout(False)
+        Me.gbxBoxJantina.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -470,6 +470,6 @@ Partial Class frmMaklumatPelanggan
     Friend WithEvents clnBil As DataGridViewTextBoxColumn
     Friend WithEvents clnNama As DataGridViewTextBoxColumn
     Friend WithEvents clnNotel As DataGridViewTextBoxColumn
-    Friend WithEvents gbxBox1 As GroupBox
-    Friend WithEvents gbxBox2 As GroupBox
+    Friend WithEvents gbxBoxBayaran As GroupBox
+    Friend WithEvents gbxBoxJantina As GroupBox
 End Class
